@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: nerfprep
+Version: 0.1.0
+Summary: The missing standard library for neural rendering data preparation
+License: MIT
+Keywords: nerf,gaussian-splatting,3d-reconstruction,computer-vision
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Requires-Dist: Pillow>=9.0
+Provides-Extra: metrics
+Requires-Dist: torch; extra == "metrics"
+Requires-Dist: torchmetrics; extra == "metrics"
+Requires-Dist: lpips; extra == "metrics"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"

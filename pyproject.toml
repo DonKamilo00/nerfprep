@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nerfprep"
+version = "0.1.0"
+description = "The missing standard library for neural rendering data preparation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["nerf", "gaussian-splatting", "3d-reconstruction", "computer-vision"]
+dependencies = [
+    "numpy>=1.24",
+    "Pillow>=9.0",
+]
+
+[project.optional-dependencies]
+metrics = ["torch", "torchmetrics", "lpips"]
+dev = ["pytest", "black", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
